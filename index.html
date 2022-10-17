@@ -9,6 +9,7 @@
 </head>
 <body>
     <h1>Cours introduction aux lignes de commande.</h1>
+    <h2>Les commandes de base.</h2>
     <div class="container">
         <div class="commande_windows bordure">
             <h2>Commande Windows</h2>
@@ -17,6 +18,7 @@
             <p><span>dir /a nomDuDossier</span>, affichera le contenu du dossier demandé.</p>
             <p><span>.</span>, point est le dossier courant.</p>
             <p><span>..</span>, point point est le dossier parent.</p>
+            <p><span>ipconfig</span>, voir l'adresse IP d'une machine Windows.</p>
         </div>
         <div class="commande_linux bordure">
             <h2>Commande Linux</h2>
@@ -25,6 +27,34 @@
             <p><span>ls -a nomDuDossier</span>, affichera le contenu du dossier demandé.</p>
             <p><span>.</span>, point est le dossier courant.</p>
             <p><span>..</span>, point point est le dossier parent.</p>
+            <p><span>ip a</span>, voir l'adresse IP d'une machine Linux.</p>
+            <p><span>ipconfig</span>, voir l'adresse IP d'une machine macOS.</p>
+        </div>
+    </div>
+    <h2>Manipuler des dossiers et des fichiers.</h2>
+    <div class="container">
+        <div class="commande_windows bordure">
+            <h2>Commande Windows</h2>
+            <p><span>mkdir nomDuDossier</span>, permet de créer un dossier.</p>
+            <p><span>echo "bonjour"</span>, affichera du texte dans la console.</p>
+            <p><span>echo "bonjour" > windows.txt</span>, créera un fichier windows.txt avec comme contenu bonjour.</p>
+            <p><span>move bonjour.txt ..</span>, déplacer le fichier bonjour.txt vers le dossier parent.</p>
+            <p><span>move subfolder windows</span>, déplacer le dossier subfolder dans le dossier windows.</p>
+            <p><span>move texte.txt texte1.txt</span>, Renomme le fichier texte.txt en texte1.txt</p>
+            <p><span>del texte1.txt</span>, supprime le fichier texte1.txt.</p>
+            <p><span>rmdir repertoire</span>, supprime le répertoire "repetoire" du répertoire courant.</p>
+        </div>
+        <div class="commande_linux bordure">
+            <h2>Commande Linux</h2>
+            <p><span>mkdir nomDuDossier</span>, permet de créer un dossier.</p>
+            <p><span>touch linux.txt</span>, créer un fichier nommé linux.txt.</p>
+            <p><span>echo "bonjour" > linux.txt</span>, créera un fichier linux.txt avec comme contenu bonjour.</p>
+            <p><span>mv bonjour.txt ..</span>, déplacer le fichier bonjour.txt vers le dossier parent.</p>
+            <p><span>mv subfolder windows</span>, déplacer le dossier subfolder dans le dossier windows.</p>
+            <p><span>mv texte.txt texte1.txt</span>, Renomme le fichier texte.txt en texte1.txt</p>
+            <p><span>rm texte1.txt</span>, supprime le fichier texte1.txt. idem sur macOS.</p>
+            <p><span>rmdir repertoire</span>, supprime le répertoire "repetoire" du répertoire courant.</p>
+            <p><span>rm -r repertoire</span>, supprime le répertoire "repertoire" et son contenu du répertoire courant. -r pour récursive, cela veut dire que la commande va supprimer tous les fichiers, dossiers et sous-dossiers du répertoire indiqué.</p>
         </div>
     </div>
 </body>

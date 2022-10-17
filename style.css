@@ -2,3 +2,14 @@
     display: flex;
     justify-content: space-around;
 }
+
+.bordure {
+    border: 1px solid blue;
+    margin: 5px;
+    padding: 10px;
+}
+
+span{
+    color: red;
+    font-weight: bold;
+}
